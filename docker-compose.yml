@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/cave
+    command: make html
+  view:
+    image: nginx
+    ports:
+      - '55678:80'
+    volumes:
+      - ./src/_website:/usr/share/nginx/html

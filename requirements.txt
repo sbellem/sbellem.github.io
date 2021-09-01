@@ -1,0 +1,15 @@
+sphinx_rtd_theme
+ipython
+sphinx
+sphinxcontrib-bibtex
+sphinxcontrib-thm
+
+# sphixn themes
+#sphinx_rtd_theme
+#sphinx-rtd-dark-mode
+sphinx-book-theme
+#sphinx-press-theme
+#groundwork-sphinx-theme
+#sphinx-bernard-theme
+
+ablog
