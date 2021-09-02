@@ -208,7 +208,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "gluon"
+project = "gSparks"
 copyright = "2021, Sylvain Bellemare"
 author = "Sylvain Bellemare"
 

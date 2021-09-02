@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Sylvain Bellemare
-=================
+Gluonic Sparks
+==============
 Hello World! Find more about me here: :ref:`about`
 
 
@@ -24,5 +24,5 @@ Hello World! Find more about me here: :ref:`about`
 .. toctree::
    :hidden:
 
-   about.rst
-   blog.rst
+   whoami.rst
+   sparks.rst
