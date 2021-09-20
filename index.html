@@ -1,70 +1,113 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
-  <meta name="description" content="Sylvain Bellemare is a software engineer with an academic background in computer science, physics, and mathematics, who specializes in Python.">
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>resume</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
   <style type="text/css">
   /*
-   * Copyright 2015 Sylvain Bellemare
-   * Copyright 2013 Christophe-Marie Duquesne
+   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
    *
    * CSS for making a resume with pandoc. Inspired by moderncv.
    *
-   * This CSS is based on Christophe-Marie Duquesne's original CSS.
-   * It is delivered to you under the CC BY-SA 3.0 License.
+   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
    * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
    */
+  
+  /*
+  --base03: #002b36;
+  --base02: #073642;
+  --base01: #586e75;
+  --base00: #657b83;
+  --base0: #839496;
+  --base1: #93a1a1;
+  --base2: #eee8d5;
+  --base3: #fdf6e3;
+  --yellow: #b58900;
+  --orange: #cb4b16;
+  --red: #dc322f;
+  --magenta: #d33682;
+  --violet: #6c71c4;
+  --blue: #268bd2;
+  --cyan: #2aa198;
+  --green: #859900;
+  */
   
   /* Whole document */
   body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      width: 800px;
+      max-width: 800px;
       margin: auto;
-      background: #002b36;
+      /*background: var(--base3);*/
+      background: #fdf6e3;
       padding: 10px 10px 10px 10px;
-      color: #2aa198;
+      color: #657b83;
   }
   
   /* Title of the resume */
   h1 {
       font-size: 55px;
-      color: #859900;
-      text-align: center;
-      margin-bottom: 15px;
+      /*color: #757575;*/
+      /*color: var(--cyan);*/
+      color: #2aa198;
+      text-align:center;
+      margin-bottom:15px;
   }
+  /* h1:hover { */
+  /*     background-color: #757575; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
   
   /* Titles of categories */
   h2 {
-      color: #268bd2;
-      margin-top: 40px;
+      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+      /* color: #268bd2; */
+      /*color: var(--yellow);*/
+      color: #b58900;
   }
-  h3 {
-      color: #268bd2;
-      margin-bottom: 5px;
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      /* This is called "rulecolor" in the ConTeXt stylesheet. */
+      /*background-color: #9CB770;*/
+      /*background-color: var(--yellow);*/
+      background-color: #b58900;
   }
-  h4 {
-      color: #268bd2;
-      margin-bottom: 5px;
-  }
+  /* h2:hover { */
+  /*     background-color: #397249; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
   
   /* Definitions */
   dt {
       float: left;
       clear: left;
-      width: 13%;
+      width: 17%;
       font-weight: bold;
-      color: #cb4b16;
   }
   dd {
       margin-left: 17%;
+      margin-bottom:7px;
   }
   p {
-      margin-top: 0;
-      margin-bottom: 7px;
+      margin-top:0;
+      margin-bottom:7px;
   }
   
   /* Blockquotes */
@@ -75,95 +118,112 @@
   /* Links */
   a {
       text-decoration: none;
-      color: #b58900;
-      font-weight: bold;
+      /*color: #397249;*/
+      color: #268bd2;
   }
+  /*
+  a:hover, a:active {
+      background-color: #fdf6e3;
+      color: #268bd2;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }*/
   
   /* Horizontal separators */
   hr {
-      color: #586e75;
-      background-color: #586e75;
-      height: 1px;
-      border: 0 none;
+      /*color: #A6A6A6;*/
+      /*color: #93a1a1;*/
+      color: #eee8d5;
   }
   
+  table {
+      width: 100%;
+  }
   </style>
 </head>
 <body>
 <h1 id="sylvain-bellemare">Sylvain Bellemare</h1>
+<hr />
+<blockquote>
+<p>Research engineer at IC3 (Initiative for CryptoCurrencies &amp; Contracts)</p>
+</blockquote>
+<hr />
 <h2 id="education">Education</h2>
 <dl>
 <dt>2010</dt>
-<dd><p><strong>Bachelor in Computer Science</strong> @ <a href="http://www.concordia.ca/encs/computer-science-software-engineering.html">Concordia University</a></p>
+<dd><p><strong>Bachelor in Computer Science</strong> @ Concordia University</p>
 <p><em>Fields of application: physics and artificial intelligence</em></p>
+</dd>
+</dl>
+<h2 id="research-development-experience">Research &amp; Development Experience</h2>
+<dl>
+<dt>2018 - now</dt>
+<dd><p><strong>Research Engineer @ <a href="https://www.initc3.org/" target="_blank">IC3</a> / Cornell University / UIUC</strong></p>
+<p>Currently working under Andrew Miller at UIUC, at the Decentralized Systems Lab, on Multi-Party Computation and Trusted Hardware (Intel SGX).</p>
+<p>Previously worked under Emin Gün Sirer, prototyping an Avalanche consensus full node in Python.</p>
+<p>A lot of my ongoing work is under the IC3 GitHub organization at <a href="">https://github.com/initc3</a>. Some key repos are pinned under my GitHub profile at <a href="">https://github.com/sbellem</a>.</p>
 </dd>
 </dl>
 <h2 id="software-industry-experience">Software Industry Experience</h2>
 <dl>
-<dt>Jul 2015 -</dt>
-<dd><p><strong>Software Engineer</strong> @ <a href="https://www.ascribe.io/">ascribe GmbH</a> (<em>Berlin, Germany</em>)</p>
+<dt>2018</dt>
+<dd><p><strong>Software Engineer @ <a href="https://oceanprotocol.com/" target="_blank">Ocean Protocol</a></strong> (Berlin, Germany)</p>
+<p>Worked on the API specification documentation, using swagger and redoc.</p>
+</dd>
+<dt>2016 - 2018</dt>
+<dd><p><strong>Software Engineer @ <a href="https://www.bigchaindb.com/" target="_blank">BigchainDB</a></strong> (Berlin, Germany)</p>
+<p>Early member of the project and core contributor to various components. Most notably: <a href="https://github.com/bigchaindb/bigchaindb" target="_blank">bigchaindb</a>, <a href="https://github.com/bigchaindb/bigchaindb-driver" target="_blank">bigchaindb-driver</a>, and <a href="https://github.com/bigchaindb/cryptoconditions" target="_blank">cryptoconditions</a>.</p>
+</dd>
+<dt>2015 - 2016</dt>
+<dd><p><strong>Software Engineer @ <a href="https://www.ascribe.io/" target="_blank">ascribe GmbH</a></strong> (Berlin, Germany)</p>
+<p>Worked on a Python backend, based on the Django web framework. Contributor to the following public repositories: <a href="https://github.com/ascribe/transactions" target="_blank">transactions</a>, <a href="https://github.com/ascribe/pyspool" target="_blank">pyspool</a>, <a href="https://github.com/ascribe/REST-main" target="_blank">REST-main</a>, <a href="https://github.com/ascribe/bitcoin-dockerfile" target="_blank">bitcoin-dockerfile</a>.</p>
+</dd>
+<dt>2012 - 2015</dt>
+<dd><p><strong>Software Engineer @ <a href="https://www.ezeep.com/" target="_blank">ezeep GmbH</a></strong> (Berlin, Germany)</p>
 <ul>
-<li>Crafting software for the sake of authenticity.</li>
+<li>Python software development on an event-driven architecture, composed of Django, MySQL/PostgreSQL, elasticsearch, Celery, RabbitMQ, &amp; Redis.</li>
+<li>Responsible of the search backend. Design, implementation, and maintainance of multiple API calls, using Tastypie, or Django REST framework.</li>
+<li>DevOps work: provisioning of development environments using Vagrant, SaltStack, and VirtualBox. Deployments to testing &amp; production environments,</li>
+<li>Workflow: Git, Github, peer reviews; test driven development; continuous integration with Travis; virtualized development environments running Ubuntu.</li>
 </ul>
 </dd>
-<dt>Mar 2015 - May 2015</dt>
-<dd><p><strong>Python Backend Developer</strong> @ <a href="https://tdispatch.com/">T Dispatch GmbH</a> (<em>Berlin, Germany</em>)</p>
+<dt>2012</dt>
+<dd><p><strong>Backend Developer @ Lieferheld GmbH</strong> (Berlin, Germany)</p>
+<p>Python/Django web development with PostgreSQL/PostGIS.</p>
+</dd>
+<dt>2011-2012</dt>
+<dd><p><strong>Software Contractor @ Rockwell Automation</strong> (San Jose, US &amp; Karlsruhe, DE)</p>
 <ul>
-<li><a href="https://www.python.org/">Python</a> software development on a microservice architecture, composed of <a href="https://www.djangoproject.com">Django</a>, <a href="http://www.postgresql.org/">PostgreSQL</a>, <a href="http://flask.pocoo.org/">Flask</a> &amp; <a href="http://redis.io/">Redis</a>.</li>
-<li>Extensive work writing tests for the <a href="http://tastypieapi.org/">Tastypie</a>-based API, using <a href="https://pytest.org/latest/">pytest</a>.</li>
-<li><a href="http://newrelic.com/devops/what-is-devops">DevOps</a> work: provisioning of development environment using <a href="http://www.vagrantup.com">Vagrant</a>, <a href="http://saltstack.com/">SaltStack</a>, and <a href="https://www.virtualbox.org/">VirtualBox</a>.</li>
+<li>Implemented data visualization &amp; statistical components in Java &amp; Java EE.</li>
+<li>Installations &amp; configurations of JBoss, Tomcat, and FTPC.</li>
+<li>Used Python for system administration purposes.</li>
 </ul>
 </dd>
-<dt>Nov 2012 - Feb 2015</dt>
-<dd><p><strong>Software Engineer</strong> @ <a href="http://www.ezeep.com">ezeep GmbH</a> (<em>Berlin, Germany</em>)</p>
+<dt>2010 - 2011</dt>
+<dd><p><strong>Software Contractor at Align Technology</strong> (San Jose, United States)</p>
 <ul>
-<li><a href="https://www.python.org/">Python</a> software development on an event-driven architecture, composed of <a href="https://www.djangoproject.com">Django</a>, <a href="http://www.mysql.com">MySQL</a>/<a href="http://www.postgresql.org/">PostgreSQL</a>, <a href="http://www.elasticsearch.org">elasticsearch</a>, <a href="http://www.celeryproject.org/">Celery</a>, <a href="http://www.rabbitmq.com">RabbitMQ</a>, &amp; <a href="http://redis.io/">Redis</a>.</li>
-<li>Responsible of the search backend. Design, implementation, and maintainance of multiple API calls, using <a href="http://tastypieapi.org/">Tastypie</a>, or <a href="http://www.django-rest-framework.org/">Django REST framework</a>.</li>
-<li><a href="http://newrelic.com/devops/what-is-devops">DevOps</a> work: provisioning of development environments using <a href="http://www.vagrantup.com">Vagrant</a>, <a href="http://saltstack.com/">SaltStack</a>, and <a href="https://www.virtualbox.org/">VirtualBox</a>. Deployments to testing &amp; production environments,</li>
-<li>Workflow: <a href="http://git-scm.com">Git</a>, <a href="https://www.github.com/">Github</a>, peer reviews; test driven development; continuous integration with <a href="https://travis-ci.org/">Travis</a>; virtualized development environments running <a href="http://www.ubuntu.com">Ubuntu</a>.</li>
+<li>Software engineering &amp; sys admin work centered around a Java EE app.</li>
+<li>Used Python with re to automate the modification of Java programs.</li>
 </ul>
 </dd>
-<dt>Feb 2012 - Jul 2012</dt>
-<dd><p><strong>Backend Developer</strong> @ <a href="http://www.lieferheld.de">Lieferheld GmbH</a> (<em>Berlin, Germany</em>)</p>
+<dt>2010 - 2012</dt>
+<dd><p><strong>Solution Engineer @ Atachi Systems</strong> (San Jose, United States)</p>
 <ul>
-<li><a href="https://www.python.org/">Python</a>/<a href="https://www.djangoproject.com">Django</a> web development with <a href="http://www.postgresql.org/">PostgreSQL</a>/<a href="http://postgis.net/">PostGIS</a>.</li>
+<li>Contracting work for Align Technology &amp; Rockwell Automation (see above).</li>
 </ul>
 </dd>
-<dt>Apr 2011 - Jan 2012</dt>
-<dd><p><strong>Software Contractor</strong> @ <a href="http://www.rockwellautomation.com">Rockwell Automation</a> (<em>San Jose, US &amp; Karlsruhe, DE</em>)</p>
+<dt>2009 - 2010</dt>
+<dd><p><strong>Solution &amp; Support Engineer @ Atachi Enterprise Solutions</strong> (Montréal, Canada)</p>
 <ul>
-<li>Implemented data visualization &amp; statistical components in <a href="http://docs.oracle.com/javase/8/docs/api/">Java</a> &amp; <a href="https://docs.oracle.com/javaee/7/api/toc.htm">Java EE</a>.</li>
-<li>Installations &amp; configurations of <a href="http://www.redhat.com/en/technologies/jboss-middleware/application-platform">JBoss</a>, <a href="http://tomcat.apache.org/">Tomcat</a>, and <a href="http://www.rockwellautomation.com/rockwellsoftware/production/productioncentre">FTPC</a>.</li>
-<li>Used <a href="https://www.python.org/">Python</a> for system administration purposes.</li>
-</ul>
-</dd>
-<dt>Jul 2010 - Mar 2011</dt>
-<dd><p><strong>Software Contractor</strong> @ <a href="http://www.aligntech.com">Align Technology</a> (<em>San Jose, United States</em>)</p>
-<ul>
-<li>Software engineering &amp; sys admin work centered around a <a href="http://www.rockwellautomation.com/rockwellsoftware/production/productioncentre">Java EE app</a>.</li>
-<li>Used <a href="https://www.python.org/">Python</a> with <a href="https://docs.python.org/2/library/re.html">re</a> to automate the modification of <a href="http://docs.oracle.com/javase/8/docs/api/">Java</a> programs.</li>
-</ul>
-</dd>
-</dl>
-<dl>
-<dt>Jul 2010 - Jan 2012</dt>
-<dd><p><strong>Solution Engineer</strong> @ <a href="http://atachisystems.com">Atachi Systems</a> (<em>San Jose, United States</em>)</p>
-<ul>
-<li>Contracting work for Align Technology &amp; Rockwell Automation (<em>see above</em>).</li>
-</ul>
-</dd>
-<dt>Sep 2009 - Jul 2010</dt>
-<dd><p><strong>Solution &amp; Support Engineer</strong> @ <a href="http://atachisystems.com">Atachi Enterprise Solutions</a> (<em>Montréal, Canada</em>)</p>
-<ul>
-<li>Software development with <a href="https://msdn.microsoft.com/en-us/library/z1zx9t92.aspx">C#</a> &amp; Rockwell's <a href="http://docs.oracle.com/javaee/6/tutorial/doc/gijti.html">Java Web Services</a> API.</li>
+<li>Software development with C# &amp; Rockwell’s Java Web Services API.</li>
 <li>Monitoring of interface managers, historical transfers, and purge operations.</li>
 </ul>
 </dd>
-<dt>Spring 2009</dt>
-<dd><p><strong>Research and Software Development</strong> @ <a href="http://isentium.com">Keenkong</a> (<em>Montréal, Canada</em>)</p>
+<dt>2009</dt>
+<dd><p><strong>Research and Software Development @ Keenkong</strong> (Montréal, Canada)</p>
 <ul>
 <li>Researched different ways of processing short texts for social medias.</li>
-<li>Implemented some components in <a href="http://docs.oracle.com/javase/8/docs/api/">Java</a>, using <a href="https://gate.ac.uk">GATE</a> &amp; the <a href="http://nlp.stanford.edu/software/lex-parser.shtml">Stanford parser</a>.</li>
+<li>Implemented some components in Java, using GATE &amp; the Stanford parser.</li>
 </ul>
 </dd>
 </dl>
@@ -171,74 +231,68 @@
 <p><em>For three Summers in a row, I was lucky to work alongside highly skilled researchers, and students, at Concordia University, in the fields of High Energy Physics and Artificial Intelligence. This section contains a summary of my experiences as a research assitant.</em></p>
 <dl>
 <dt>2009</dt>
-<dd><p><strong>Noun Phrase Semantics</strong> @ <a href="http://clac.cs.concordia.ca">CLaC Laboratory</a></p>
+<dd><p><strong>Noun Phrase Semantics</strong> @ CLaC Laboratory</p>
 <p><em>Computer Science Department, Concordia University</em></p>
 <ul>
-<li>Worked with the <a href="https://gate.ac.uk">General Architecture for Text Engineering</a> framework.</li>
-<li>Developed new features for a <a href="http://docs.oracle.com/javase/8/docs/api/">Java</a>-based number-interpreter system.</li>
-<li>Wrote <a href="https://gate.ac.uk/sale/tao/splitch8.html">JAPE</a> grammars.</li>
-<li>Operating System used: <a href="http://www.linux.com/">Linux</a>.</li>
-<li>Supervisor: <a href="http://users.encs.concordia.ca/~bergler">Dr. Sabine Bergler</a></li>
+<li>Worked with the General Architecture for Text Engineering framework.</li>
+<li>Developed new features for a Java-based number-interpreter system.</li>
+<li>Wrote JAPE grammars.</li>
+<li>Operating System used: Linux.</li>
+<li>Supervisor: Dr. Sabine Bergler</li>
 </ul>
 </dd>
 <dt>2008</dt>
-<dd><p><strong>Automatic Text Summarization</strong> @ <a href="http://clac.cs.concordia.ca">CLaC Laboratory</a></p>
+<dd><p><strong>Automatic Text Summarization</strong> @ CLaC Laboratory</p>
 <p><em>Computer Science Department, Concordia University</em></p>
 <ul>
-<li>Worked with the <a href="https://gate.ac.uk">General Architecture for Text Engineering</a> framework.</li>
-<li>Developed code for a <a href="http://docs.oracle.com/javase/8/docs/api/">Java</a>-based <a href="http://rene-witte.net/erss-at-tac2008">text summarization system</a>.</li>
-<li>Wrote <a href="http://www.tldp.org/LDP/abs/html/">bash</a> scripts to automate the collection of test results.</li>
-<li>Operating System used: <a href="http://www.linux.com/">Linux</a>.</li>
-<li>Supervisor: <a href="http://users.encs.concordia.ca/~bergler">Dr. Sabine Bergler</a></li>
+<li>Worked with the General Architecture for Text Engineering framework.</li>
+<li>Developed code for a Java-based text summarization system.</li>
+<li>Wrote bash scripts to automate the collection of test results.</li>
+<li>Operating System used: Linux.</li>
+<li>Supervisor: Dr. Sabine Bergler</li>
 </ul>
 </dd>
 <dt>2007</dt>
-<dd><p><strong>Single Top Quark Production</strong> @ <a href="http://physics.concordia.ca">Computational High Energy Physics</a></p>
+<dd><p><strong>Single Top Quark Production</strong> @ Computational High Energy Physics</p>
 <p><em>Physics Department, Concordia University</em></p>
 <ul>
-<li>Assisted cutting-edge research work that required <a href="http://www.feynarts.de/FA3Guide.pdf">learning</a> some basic notions of <a href="http://pdg.lbl.gov/2014/html/what_is_pdg.html">particle physics</a>, e.g.: the <a href="http://home.web.cern.ch/about/physics/standard-model">Standard Model</a>.</li>
-<li>Wrote programs to perform the calculations with specialized <a href="http://www.wolfram.com/mathematica/">Mathematica</a> software packages (<a href="http://www.feynarts.de">FeynArts</a>, <a href="http://www.feynarts.de/formcalc">FormCalc</a>, and <a href="http://www.feynarts.de/looptools">LoopTools</a>).</li>
-<li>Operating System used: <a href="http://www.linux.com/">Linux</a>.</li>
+<li>Assisted cutting-edge research work that required learning some basic notions of particle physics, e.g.: the Standard Model.</li>
+<li>Wrote programs to perform the calculations with specialized Mathematica software packages (FeynArts, FormCalc, and LoopTools).</li>
+<li>Operating System used: Linux.</li>
 <li>Created and presented a poster on the research work.</li>
-<li>Supervisors: <a href="http://physics.concordia.ca/facultyandresearch/bios/mfrank.php">Dr. Mariana Frank</a> &amp; <a href="http://www.researchgate.net/profile/Ismail_Turan">Dr. Ismail Turan</a></li>
+<li>Supervisors: Dr. Mariana Frank &amp; Dr. Ismail Turan</li>
 </ul>
 </dd>
 </dl>
 <h4 id="publication">Publication</h4>
-<p>Sylvain Bellemare, Sabine Bergler, and René Witte. <a href="http://www.nist.gov/tac/publications/2008/participant.papers/CLaC.proceedings.pdf">ERSS at TAC 2008</a>. Text Analysis Conference (TAC), November 17-19, 2008, National Institute of Standards and Technology (NIST), Gaithersburg, Maryland, USA.</p>
+<p>Sylvain Bellemare, Sabine Bergler, and René Witte. ERSS at TAC 2008. Text Analysis Conference (TAC), November 17-19, 2008, National Institute of Standards and Technology (NIST), Gaithersburg, Maryland, USA.</p>
 <h4 id="poster-presentation">Poster Presentation</h4>
-<p>Sylvain Bellemare. <em>Single Top Quark Production at LHC: FeynArts-FormCalc-LoopTools at Work</em>. Presented at the Arts and Science Undergraduate Research Day, Concordia University, Spring 2008.</p>
+<p>Sylvain Bellemare. Single Top Quark Production at LHC: FeynArts-FormCalc-LoopTools at Work. Presented at the Arts and Science Undergraduate Research Day, Concordia University, Spring 2008.</p>
 <h4 id="honors-and-awards">Honors and Awards</h4>
 <dl>
 <dt>2009</dt>
-<dd><p><a href="http://www.nserc-crsng.gc.ca/students-etudiants/ug-pc/usra-brpc_eng.asp">Undergraduate Student Research Award</a> from the Natural Sciences and Engineering Research Council of Canada (NSERC), for research work in Natural Language Processing at Concordia University</p>
+<dd><a href="https://www.nserc-crsng.gc.ca/students-etudiants/ug-pc/usra-brpc_eng.asp" target="_blank">Undergraduate Student Research Award</a> from the Natural Sciences and Engineering Research Council of Canada (NSERC), for research work in Natural Language Processing at Concordia University
 </dd>
 <dt>2008</dt>
-<dd><p><a href="http://www.nserc-crsng.gc.ca/students-etudiants/ug-pc/usra-brpc_eng.asp">Undergraduate Student Research Award</a> from the Natural Sciences and Engineering Research Council of Canada (NSERC), for research work in Natural Language Processing at Concordia University</p>
+<dd><a href="https://www.nserc-crsng.gc.ca/students-etudiants/ug-pc/usra-brpc_eng.asp" target="_blank">Undergraduate Student Research Award</a> from the Natural Sciences and Engineering Research Council of Canada (NSERC), for research work in Natural Language Processing at Concordia University
 </dd>
 <dt>2007</dt>
-<dd><p><a href="http://www.nserc-crsng.gc.ca/students-etudiants/ug-pc/usra-brpc_eng.asp">Undergraduate Student Research Award</a> from the Natural Sciences and Engineering Research Council of Canada (NSERC), for research work in Computational High Energy Physics, at Concordia University</p>
-</dd>
-<dd><p><a href="https://www.encs.concordia.ca/documents/ENCS_DeanList_2006-7.pdf">Dean's List</a>, Concordia University, Faculty of Engineering and Computer Science</p>
+<dd><p><a href="https://www.nserc-crsng.gc.ca/students-etudiants/ug-pc/usra-brpc_eng.asp" target="_blank">Undergraduate Student Research Award</a> from the Natural Sciences and Engineering Research Council of Canada (NSERC), for research work in Computational High Energy Physics, at Concordia University</p>
+<p><strong>Dean’s List</strong>, Concordia University, Faculty of Engineering and Computer Science</p>
 </dd>
 <dt>2006</dt>
-<dd><p>Inducted into the <a href="https://www.goldenkey.org/">Golden Key International Honour Society</a></p>
+<dd>Inducted into the <a href="https://www.goldenkey.org/" target="_blank">Golden Key International Honour Society</a>
 </dd>
 </dl>
 <h2 id="written-verbal-communication-skills">Written &amp; Verbal Communication Skills</h2>
 <dl>
 <dt>Languages</dt>
-<dd><strong>French</strong> (<em>native</em>), <strong>English</strong> (<em>fluent</em>), <strong>German</strong> (<em>basic</em>)
+<dd><strong>French</strong> (native), <strong>English</strong> (fluent), <strong>German</strong> (basic)
 </dd>
 </dl>
 <hr />
 <blockquote>
-<p><script type="text/javascript">
-<!--
-h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#x73;&#98;&#x65;&#108;&#108;&#x65;&#x6d;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
-// -->
-</script><noscript>&#x73;&#98;&#x65;&#108;&#108;&#x65;&#x6d;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript> • +4917687345876 • <a href="https://www.github.com/sbellem">github</a> • <a href="https://www.hackerrank.com/gluonicdragon">hackerrank</a><br />Berlin, Germany</p>
+<p><a href="mailto:sbellem@gmail.com">sbellem@gmail.com</a> • <a href="https://github.com/sbellem" target="_blank">github</a> • <a href="https://www.hackerrank.com/gluonicdragon" target="_blank">hackerrank</a></p>
 </blockquote>
 </body>
 </html>
