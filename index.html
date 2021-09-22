@@ -51,17 +51,16 @@
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       max-width: 800px;
       margin: auto;
-      /*background: var(--base3);*/
-      background: #fdf6e3;
+      /*background: #fdf6e3;*/ /* light */
+      /*color: #657b83;*/ /* light */
+      background: #002b36; /* dark */
+      color: #839496; /* dark */
       padding: 10px 10px 10px 10px;
-      color: #657b83;
   }
   
   /* Title of the resume */
   h1 {
       font-size: 55px;
-      /*color: #757575;*/
-      /*color: var(--cyan);*/
       color: #2aa198;
       text-align:center;
       margin-bottom:15px;
@@ -75,9 +74,9 @@
   /* Titles of categories */
   h2 {
       /* This is called "sectioncolor" in the ConTeXt stylesheet. */
-      /* color: #268bd2; */
       /*color: var(--yellow);*/
-      color: #b58900;
+      color: #b58900; /* light, yellow */
+      color: #268bd2; /* dark, blue */
   }
   /* There is a bar just before each category */
   h2:before {
@@ -89,7 +88,8 @@
       /* This is called "rulecolor" in the ConTeXt stylesheet. */
       /*background-color: #9CB770;*/
       /*background-color: var(--yellow);*/
-      background-color: #b58900;
+      /*background-color: #b58900;*/ /* light, yellow */
+      background-color: #268bd2; /* dark, blue */
   }
   /* h2:hover { */
   /*     background-color: #397249; */
@@ -98,11 +98,13 @@
   /* } */
   h3 {
       /* This is called "sectioncolor" in the ConTeXt stylesheet. */
-      color: #b58900;
+      /*color: #b58900;*/ /* light, yellow */
+      color: #268bd2; /* dark, blue */
   }
   h4 {
       /* This is called "sectioncolor" in the ConTeXt stylesheet. */
-      color: #b58900;
+      /*color: #b58900;*/ /* light, yellow */
+      color: #268bd2; /* dark, blue */
   }
   
   /* Definitions */
@@ -130,7 +132,8 @@
   a {
       text-decoration: none;
       /*color: #397249;*/
-      color: #268bd2;
+      /*color: #268bd2;*/ /* light, blue */
+      color: #b58900; /* dark, yellow */
   }
   /*
   a:hover, a:active {
@@ -142,9 +145,8 @@
   
   /* Horizontal separators */
   hr {
-      /*color: #A6A6A6;*/
-      /*color: #93a1a1;*/
-      color: #eee8d5;
+      /*color: #eee8d5;*/ /* light */
+      color: #586e75; /* dark */
   }
   
   table {
@@ -169,7 +171,7 @@
 <h2 id="research-development-experience">Research &amp; Development Experience</h2>
 <dl>
 <dt>2018 - now</dt>
-<dd><p><strong>Research Engineer @ <a href="https://www.initc3.org/" target="_blank">IC3</a> / Cornell University / UIUC</strong></p>
+<dd><p><strong>Research Engineer @ <a href="https://www.initc3.org/" target="_blank">IC3</a> / <a href="https://www.cs.cornell.edu/" target="_blank">Cornell</a> / <a href="https://spri.engr.illinois.edu/" target="_blank">UIUC</a></strong></p>
 <p>Currently working with Andrew Miller’s group at the <a href="https://decentralize.ece.illinois.edu/" target="_blank">Decentralized Systems Lab</a> (UIUC), on Multi-Party Computation and Trusted Hardware (Intel SGX).</p>
 <p>Previously worked with Emin Gün Sirer’s group at Cornell, prototyping an Avalanche consensus full node in Python.</p>
 </dd>
